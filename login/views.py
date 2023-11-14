@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.template import loader
 
 def login(request):
-  template = loader.get_template('myfirs.html')
+  template = loader.get_template('beranda.html')
   return HttpResponse(template.render())
 
 def produk(request):
