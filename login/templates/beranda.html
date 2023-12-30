@@ -40,7 +40,7 @@
   <div class="hero_area">
 
     <div class="hero_bg_box">
-      <img src="{% static 'images/hero-bg.png' %}" alt="">
+      <img src="{% static 'images/ekaa.png' %}" alt="">
     </div>
 
     <!-- header section strats -->
@@ -65,11 +65,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="\produk">Produk</a>
               </li>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form>
             </ul>
           </div>
         </nav>
@@ -180,7 +175,7 @@
                   Kaos
                 </h5>
                 <p>
-                  Di Eka Sablon anda dapat menyablon berbagai macam jenis kaos, dengan hargak yang terjangkau mulai dari Rp.20.000 - Rp. 50.000 tsesuai dengan sulitnya desain, banyaknya warna yang dipakai, dan banyaknya huruf, order lebih dari 10 kaos ada harga grosir
+                  Di Eka Sablon anda dapat menyablon berbagai macam jenis kaos, dengan hargak yang terjangkau mulai dari Rp.20.000 - Rp. 50.000 tsesuai dengan sulitnya desain, banyaknya warna yang dipakai, dan banyaknya huruf, order lebih dari 10 kaos ada harga grosir, tersedia sablon manual dan sablon printing
                 </p>
               </div>
             </div>
@@ -195,7 +190,7 @@
                   Totebag
                 </h5>
                 <p>
-                  Di Eka Sablon anda juga dapat menyablon beberapa tas seperti totebag, tas souvenir pernikahan dsb, dengan harga mulai dari Rp.5000-Rp.25.000 sesuai dengan sulitnya desain, banyaknya warna yang dipakai dan banyaknya huruf, order lebih dari 50 tas ada harga grosir
+                  Di Eka Sablon anda juga dapat menyablon beberapa tas seperti totebag, tas souvenir pernikahan dsb, dengan harga mulai dari Rp.5000-Rp.25.000 sesuai dengan sulitnya desain, banyaknya warna yang dipakai dan banyaknya huruf, order lebih dari 50 tas ada harga grosir, tersedia sablon manual dan sablon printing
                 </p>
               </div>
             </div>
@@ -210,7 +205,7 @@
                   Sweater
                 </h5>
                 <p>
-                  Di Eka Sablon anda juga dapat menyablon sweater, dengan harga mulai dari Rp.25.000-Rp.75.000 sesuai dengan sulitnya desain, banyaknya warna yang dipakai dan banyaknya huruf, order lebih dari 10 sweater ada harga grosir
+                  Di Eka Sablon anda juga dapat menyablon sweater, dengan harga mulai dari Rp.25.000-Rp.75.000 sesuai dengan sulitnya desain, banyaknya warna yang dipakai dan banyaknya huruf, order lebih dari 10 sweater ada harga grosir, tersedia sablon manual dan sablon printing
                 </p>
               </div>
             </div>
@@ -233,6 +228,21 @@
         </div>
       </div>
     </div>
+
+    <h1 align="center">{{menu}}</h1>
+    <table border="1" style="margin-left: 70px; margin-right: 70px;">
+      <tr align="center">
+        <th>Nama</th> 
+        <th>Keterangan</th>
+      </tr>
+
+      {% for x in beranda%}
+      <tr>
+        <td>{{x.nama}}</td>
+        <td>{{x.keterangan}}</td>
+      </tr>
+      {%endfor%}
+    </table>
   </section>
 
   <!-- end department section -->
@@ -244,7 +254,7 @@
       <div class="row">
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="{% static 'images/logosablon.png' %}" alt="">
+            <img src="{% static 'images/logo eka sablon.png' %}" alt="">
           </div>
         </div>
         <div class="col-md-6">
@@ -255,10 +265,7 @@
               </h2>
             </div>
             <p>
-              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-              in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-              are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-              the middle of text. All
+              Eka sablon ada sejak tahun 2005, eka sablon terletak di Jl.Veteran Gg8/12, eka sablon menyediakan beberapa sablonan yakni sablon manual dan sablon printing tentu dengan harga yang merakyat menjadikan eka sablon sebagai tempat sablon terbaik dengan harga yang terjangkau dengan kualitas yang tidak muarahan.
             </p>
             <a href="">
               Read More
@@ -276,10 +283,10 @@
   <section class="doctor_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
+        <h2 style="color: black;">
           Produk
         </h2>
-        <p class="col-md-10 mx-auto px-0">
+        <p class="col-md-10 mx-auto px-0" style="color: black;">
           Berikut adalah contoh sablonan kami :
         </p>
       </div>
@@ -287,7 +294,7 @@
         <div class="col-sm-6 col-lg-4 mx-auto">
           <div class="box">
             <div class="img-box">
-              <img src="{% static 'images/kaos.jpeg' %}" alt="">
+              <img src="{% static 'images/kaos.jpg' %}" alt="">
             </div>
             <div class="detail-box">
               <div class="social_box">
@@ -312,7 +319,7 @@
         <div class="col-sm-6 col-lg-4 mx-auto">
           <div class="box">
             <div class="img-box">
-              <img src="{% static 'images/totebag.jpeg' %}" alt="">
+              <img src="{% static 'images/totebag.jpg' %}" alt="">
             </div>
             <div class="detail-box">
               <div class="social_box">
@@ -337,7 +344,7 @@
         <div class="col-sm-6 col-lg-4 mx-auto">
           <div class="box">
             <div class="img-box">
-              <img src="{% static 'images/sweater.jpeg' %}" alt="">
+              <img src="{% static 'images/sweater.jpg' %}" alt="">
             </div>
             <div class="detail-box">
               <div class="social_box">
@@ -368,6 +375,7 @@
           Pesan Sekarang
         </a>
       </div>
+      
     </div>
   </section>
 
@@ -384,19 +392,19 @@
       <div class="row">
         <div class="col-md-6">
           <div class="form_container contact-form">
-            <form action="">
+            <form action="https://formspree.io/f/xkndwdey" method="POST">
               <div class="form-row">
                 <div class="col-lg-6">
                   <div>
-                    <input type="text" placeholder="Your Name" />
+                    <input type="text" placeholder="Your Name" name="name"/>
                   </div>
                 </div>
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" placeholder="Email" name="email"/>
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" class="message-box" placeholder="Message" name="message" />
               </div>
               <div class="btn_box">
                 <button>
@@ -409,8 +417,11 @@
         <div class="col-md-6">
           <div class="map_container">
             <div class="map">
-              <div id="googleMap"></div>
+             <img src="{% static 'images/maps1.png' %}" alt="">
             </div>
+          </div><br>
+          <div class="btn_box" align="center">
+            <button><a href="https://www.google.com/maps/@-7.1769825,113.4895155,15z?entry=ttu" target="_blank">Lokasi</a></button>
           </div>
         </div>
       </div>
@@ -434,16 +445,16 @@
               <div class="col-md-11 col-lg-10 mx-auto">
                 <div class="box">
                   <div class="img-box">
-                    <img src="{% static 'images/client.jpg' %}" alt="" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z"/></svg>
                   </div>
                   <div class="detail-box">
                     <div class="name">
                       <h6>
-                        Alan Emerson
+                        Khofin
                       </h6>
                     </div>
                     <p>
-                      Enim consequatur odio assumenda voluptas voluptatibus esse nobis officia. Magnam, aspernatur nostrum explicabo, distinctio laudantium delectus deserunt quia quidem magni corporis earum inventore totam consectetur corrupti! Corrupti, nihil sunt? Natus.
+                      Terimakasih Eka Sablon saya sangat puas dengan sablonan dan pelayanan anda
                     </p>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                   </div>
@@ -456,16 +467,16 @@
               <div class="col-md-11 col-lg-10 mx-auto">
                 <div class="box">
                   <div class="img-box">
-                    <img src="{% static 'images/client.jpg' %}" alt="" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z"/></svg>
                   </div>
                   <div class="detail-box">
                     <div class="name">
                       <h6>
-                        Alan Emerson
+                        Evita Anindya
                       </h6>
                     </div>
                     <p>
-                      Enim consequatur odio assumenda voluptas voluptatibus esse nobis officia. Magnam, aspernatur nostrum explicabo, distinctio laudantium delectus deserunt quia quidem magni corporis earum inventore totam consectetur corrupti! Corrupti, nihil sunt? Natus.
+                      Sudah beberapa kali saya menyablon disini, tidak pernah mengecewakan, terimakasih Eka Sablon
                     </p>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                   </div>
@@ -478,16 +489,16 @@
               <div class="col-md-11 col-lg-10 mx-auto">
                 <div class="box">
                   <div class="img-box">
-                    <img src="{% static 'images/client.jpg' %}" alt="" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 7.001c0 3.865-3.134 7-7 7s-7-3.135-7-7c0-3.867 3.134-7.001 7-7.001s7 3.134 7 7.001zm-1.598 7.18c-1.506 1.137-3.374 1.82-5.402 1.82-2.03 0-3.899-.685-5.407-1.822-4.072 1.793-6.593 7.376-6.593 9.821h24c0-2.423-2.6-8.006-6.598-9.819z"/></svg>
                   </div>
                   <div class="detail-box">
                     <div class="name">
                       <h6>
-                        Alan Emerson
+                        Aurelia Citra
                       </h6>
                     </div>
                     <p>
-                      Enim consequatur odio assumenda voluptas voluptatibus esse nobis officia. Magnam, aspernatur nostrum explicabo, distinctio laudantium delectus deserunt quia quidem magni corporis earum inventore totam consectetur corrupti! Corrupti, nihil sunt? Natus.
+                      Terimakasih Eka Sablon, dari dulu hingga sekarang kualitasnya tetap sama, semoga tetap amanah ya kak 
                     </p>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                   </div>
@@ -561,7 +572,7 @@
               About
             </h4>
             <p>
-              Beatae provident nobis mollitia magnam voluptatum, unde dicta facilis minima veniam corporis laudantium alias tenetur eveniet illum reprehenderit fugit a delectus officiis blanditiis ea.
+              Kami menyediakan kualitas produk terbaik, jika sablonan kami tidak sesuai dengan apa yang kami promosikan maka dapatkan uang anda kembali !!!
             </p>
           </div>
         </div>
@@ -582,22 +593,20 @@
         </div>
         <div class="col-md-6 col-lg-3 footer_col ">
           <h4>
-            Newsletter
+            Biodata Owner Eka Sablon
           </h4>
-          <form action="#">
-            <input type="email" placeholder="Enter email" />
-            <button type="submit">
-              Subscribe
-            </button>
-          </form>
+          <h6>
+            Eka Febriyanti Kholifah
+          </h6>
+          <p>
+            I am Eka Febriyati Kholifah, usually called Eka, I am an alumnus of SMPN 5 Pamekasan, and an alumnus of SMKN 3 Pamekasan majoring in software engineering. I am currently studying at the Islamic University of Madura, studying informatics.
+          </p>
         </div>
       </div>
       <div class="footer-info">
         <p>
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="https://html.design/">Ekafebry<br><br></a>
-            &copy; <span id="displayYear"></span> Distributed By
-            <a href="https://themewagon.com/">Eka Febriyanti Kh</a>
+          <a href="https://www.instagram.com/ek.fbrykh?igshid=NGVhN2U2NjQ0Yg==">Eka Febriyanti Kholifah<br><br></a>
         </p>
        
       </div>  
@@ -606,17 +615,17 @@
   <!-- footer section -->
 
   <!-- jQery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
   <!-- popper js -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
   <!-- bootstrap js -->
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
   <!-- owl slider -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
   <!-- custom js -->
-  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
